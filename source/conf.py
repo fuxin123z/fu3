@@ -202,3 +202,10 @@ htmlhelp_basename = 'pypa.io'
 
 # If false, no module index is generated.
 #latex_use_modindex = True
+
+
+from recommonmark.parser import CommonMarkParser
+source_parsers = {
+    '.md': CommonMarkParser,
+}
+source_suffix = ['.rst', '.md']
